@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>page layout 1</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            border: 1px solid red;
+        }
+        
+        header,
+        footer {
+            height: 20vh;
+            border: 1px solid blue;
+        }
+        
+        div.main,
+        main {
+            flex: 1;
+            border: 3px solid violet;
+            display: flex;
+        }
+        
+        nav,
+        aside {
+            width: 20vw;
+            height: 20vh;
+            border: 3px solid silver;
+        }
+        
+        article {
+            flex: 1;
+            border: 3px solid teal;
+        }
+        
+        nav {
+            order: -1;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>header</header>
+        <main>
+            <!--<div class="main">-->
+            <article>
+                Article
+            </article>
+            <nav>Nav</nav>
+            <aside>
+                sidebar
+            </aside>
+        </main>
+        <!--</div>-->
+        <footer>footer</footer>
+    </div>
+
+</body>
+
+</html>

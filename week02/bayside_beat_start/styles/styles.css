@@ -1,0 +1,17 @@
+/* layout for Bayside Beat using flexbox*/
+
+
+/*structure of the page*/
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
