@@ -1,7 +1,7 @@
 /*  styles for bayside beat */
 
 
-/*universal selector*/
+/*base rules*/
 
 * {
     margin: 0;
@@ -9,7 +9,7 @@
 }
 
 
-/*page structure*/
+/*layout rules*/
 
 body {
     width: 100%;

@@ -1,0 +1,157 @@
+        /* styles for bayside beat*/
+        /*universal selector*/
+        
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /*page structure*/
+        
+        body {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: lightskyblue;
+        }
+        
+        .wrapper {
+            width: 80%;
+            margin: 0 auto;
+            background-color: white;
+        }
+        
+        header,
+        footer {
+            display: block;
+            height: 200px;
+        }
+        
+        header h1 {
+            font-family: georgia, 'times new roman', times, sherif;
+            font-size: 3em;
+            /*font-size is singular*/
+            line-height: 2em;
+            color: skyblue;
+            text-align: center;
+        }
+        
+        ul.main_nav {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            list-style-type: none;
+            height: 3vh;
+            background: #4D4D4D;
+            padding-top: 0.5em;
+            padding-bottom: 0.5em;
+        }
+        
+        .link-name {
+            width: 20%;
+            text-align: center;
+        }
+        
+        a.link_item a.link-item:link {
+            color: white;
+            /*semicolon was missing*/
+            font-size: 1.5em;
+            text-decoration: none;
+            /*spelling mistake dcoration instead of decoration*/
+            font-family: arial, sans-serif;
+        }
+        
+        div.hero {
+            display: block;
+            margin: 0;
+            position: relative;
+        }
+        
+        .hero_image {
+            width: 100%;
+        }
+        
+        .hero_text {
+            position: absolute;
+            top: 2.2em;
+            right: 2.5em;
+            width: 36%;
+            padding-right: 10px;
+            background-color: #FAA356;
+            color: #FFFFFF;
+            border-radius: 15px;
+        }
+        
+        .hero_text h2 {
+            color: #FFFFFF;
+        }
+        
+        div.main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        
+        section.col-1 {
+            flex: 2;
+            margin-left: 0.5em;
+            margin-right: 0.25em;
+        }
+        
+        aside.col-2 {
+            flex: 1;
+            margin-right: 0.5em;
+            margin-left: 0.25em;
+        }
+        
+        .footer_text {
+            text-align: center;
+        }
+        /*typographical section*/
+        
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2em;
+            line-height: 1.8em;
+            color: steelblue;
+        }
+        
+        figure {
+            width: 40%;
+            margin: 1em auto;
+            padding: 1em 1em 2em 1em;
+            box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5)
+        }
+        
+        .fig-image {
+            width: 100%
+        }
+        
+        figcaption {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+            font-size: 14px
+        }
+        
+        a {
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        a:link {
+            color: #ff6600;
+        }
+        
+        a:visited {
+            /*had a semicolon in stead of a colon between a and visited*/
+            color: #FF944c;
+        }
+        
+        a:hover,
+        a:active,
+        a:focus {
+            color: steelblue;
+            text-decoration: underline;
+        }
+        /*this closing bracket was missing*/

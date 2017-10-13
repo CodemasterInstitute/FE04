@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forms tutorial - week 4</title>
+</head>
+
+<body>
+    <h1>Building a form example</h1>
+    <p>
+        from <a href="http://learn.shayhowe.com/html-css/building-forms/">learn.shayhowe.com's  html-css building-forms</a>
+    </p>
+
+    <form action="" method="post">
+        <!--	input type examples -->
+        <div>
+            <label for="username">User Name</label>
+            <input type="text" name="username">
+        </div>
+        <!-- add in place holders for each input box as necessary -->
+        <label for="birthday">Birthday</label>
+        <input type="date" name="birthday">
+        <label for="game-time">Game time</label>
+        <input type="time" name="game-time">
+        <label for="email-address">Email</label>
+        <input type="email" name="email-address">
+        <!-- add in other attributes as needed-->
+        <label for="website">Website</label>
+        <input type="url" name="website">
+        <label for="cost">Cost</label>
+        <input type="number" name="cost">
+        <label for="phone-number">Phone Number</label>
+        <input type="tel" name="phone-number">
+        <!--	Textarea example -->
+        <label for="comment">Add your comment here</label>
+        <textarea name="comment">Add your comment here</textarea>
+        <!--	radio btns example -->
+        <fieldset class="radio-weekend">
+            <legend>Favourite day of the weekend? please choose one.
+            </legend>
+            <label for="Friday">Friday</label>
+            <input type="radio" name="day" value="Friday" checked>
+            <label for="Saturday">Saturday</label>
+            <input type="radio" name="day" value="Saturday">
+            <label for="Sunday">Sunday</label>
+            <input type="radio" name="day" value="Sunday">
+        </fieldset>
+        <!--	checkbox example -->
+        <fieldset class="radio-weekend">
+            <legend>Favourite day of the weekend? please choose up to three.
+            </legend>
+            <label for="Friday">Friday</label>
+            <input type="checkbox" name="day" value="Friday" checked>
+            <label for="Saturday">Saturday</label>
+            <input type="checkbox" name="day" value="Saturday">
+            <label for="Sunday">Sunday</label>
+            <input type="checkbox" name="day" value="Sunday"> Sunday
+
+
+            <!--	dropdown list example -->
+            <label for="day">Select your favourite day?</label>
+            <select name="day">
+	  <option value="Friday" selected>Friday</option>
+	  <option value="Saturday">Saturday</option>
+	  <option value="Sunday">Sunday</option>
+	</select>
+
+            <!--	dropdown list multiple selections example -->
+            <label for="day">Select your favourite days?</label>
+            <select name="day" id="select-day" multiple>
+	<option value="Friday">Friday</option>
+	<option value="Saturday">Saturday</option>
+	<option value="Sunday">Sunday</option>
+
+</select>
+            <!--	button example -->
+            <label>Ready to Send?</label>
+            <button name="submit">
+  <strong>Send Us</strong> a Message
+</button>
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
