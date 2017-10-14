@@ -95,7 +95,7 @@ select {
 
 .checkbox-weekend,
 .radio-weekend {
-    border: 1px solid silver;
+    border: 1px solid darkgray;
     position: relative;
     padding: 20px 10px 10px;
 }
@@ -127,6 +127,21 @@ select {
     line-height: 1.1;
     margin: 9px 20px 0 0;
     width: 140px;
+}
+
+.help-tip {
+    display: inline-block;
+    font-size: x-small;
+    padding: 1em;
+}
+
+.required {
+    color: darkred;
+    font-size: x-small;
+}
+
+.sr-only {
+    display: none;
 }
 
 
@@ -179,7 +194,8 @@ select {
 
 /* Radio buttons + checkboxes */
 
-.form-element ul {
+.form-element input[type=radio],
+.form-element input[type=checkbox] {
     margin: 5px 0 0 160px;
 }
 
@@ -188,7 +204,7 @@ select {
     padding: 0;
 }
 
-.form-element ul li label {
+.form-element label {
     display: inline;
     float: none;
     font-size: 1em;
@@ -197,7 +213,8 @@ select {
     padding: 0;
 }
 
-.form-element ul li input {
+.form-element input[type=radio],
+.form-element input[type=checkbox] {
     border: inherit;
     display: inline;
     margin: 0 5px 0 0;
