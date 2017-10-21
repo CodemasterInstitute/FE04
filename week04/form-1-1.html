@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>forms tutorial - week 4</title>
+    <link href="styles/styles-1.css" rel="stylesheet">
+</head>
+
+<body id="form-examples">
+    <div class="wrapper">
+        <h1>Building a form example</h1>
+        <p class="introduction">
+            from <a href="http://learn.shayhowe.com/html-css/building-forms/">learn.shayhowe.com's  html-css building-forms</a>
+        </p>
+        <p class="introduction">All fields are optional unless marked "<span class="required">(required)</span>"</p>
+
+        <form action="#" method="get" id="form1" class="form-controls">
+            <!--	input type examples -->
+            <div class="form-element">
+                <label for="username" class="form-label">User Name <span class="required">(required)</span></label>
+
+                <input type="text" name="username" id="username" required>
+                <label class="help-tip">This is the name that you will use to login</label>
+            </div>
+            <!-- add in place holders for each input box as necessary -->
+            <div class="form-element">
+                <label for="birthday" class="form-label">Birthday</label>
+                <input type="date" name="birthday"></div>
+            <div class="form-element">
+                <p class="form-label">Birthday</p>
+                <label for="dayofbirthday" class="sr-only">day</label>
+                <input type="text" name="dayofbirthday" max="2" placeholder="dd">
+                <label for="monthofbirthday" class="sr-only">month</label>
+                <input type="text" name="monthofbirthday" max="2" placeholder="mm">
+                <label for="yearofbirthday" class="sr-only">year</label>
+                <input type="text" name="yearofbirthday" max="4" placeholder="yyyy">
+            </div>
+            <div class="form-element">
+                <label for="game-time" class="form-label">Game time</label>
+                <input type="time" name="game-time"></div>
+            <div class="form-element">
+                <label for="email-address" class="form-label">Email <span class="required">(required)</span></label>
+                <input type="email" name="email-address" id="email-address" required placeholder="yourname@yourdomain.com" pattern="^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$"></div>
+            <div class="form-element">
+                <!-- add in other attributes as needed-->
+                <label for="password" class="form-label">Password</label>
+                <input type="password" name="password">
+                <label class="help-tip">your password must be more than 8 characters and contain at least 1 Upper Case, 1 lowercase, 1 number and a special character.</label></div>
+            <div class="form-element">
+                <!-- add in other attributes as needed-->
+                <label for="website" class="form-label">Website</label>
+                <input type="url" name="website"></div>
+            <div class="form-element">
+                <label for="file" class="form-label">file</label>
+                <input type="file" name="file"></div>
+            <div class="form-element">
+                <label for="cost" class="form-label">Cost</label>
+                <input type="number" name="cost"></div>
+            <div class="form-element">
+                <label for="phone-number" class="form-label">Phone Number</label>
+                <input type=" tel " name="phone-number "></div>
+            <div class="form-element ">
+                <!--	Textarea example -->
+                <label for="comment " class="form-label">Add your comment here</label>
+                <textarea name="comment " class="form-comment">Add your comment here</textarea>
+                <!--	radio btns example -->
+            </div>
+            <div class="form-element">
+                <fieldset class="radio-weekend ">
+                    <legend>Favourite day of the weekend? please choose one.
+                    </legend>
+                    <label for="Friday" class="form-label ">Friday</label>
+                    <input type="radio" name="rad-day" id="fri-rad">
+                    <label for="Saturday" class="form-label">Saturday</label>
+                    <input type="radio" name="rad-day" id="sat-rad" class="form-radio">
+                    <label for="Sunday" class="form-label">Sunday</label>
+                    <input type="radio" name="rad-day" id="sun-rad" class="form-radio">
+                </fieldset>
+            </div>
+            <div class="form-element ">
+                <!--	checkbox example -->
+                <fieldset class="checkbox-weekend">
+                    <legend>Favourite day of the weekend? please choose up to three.
+                    </legend>
+
+                    <input type="checkbox" name="day" class="form-chkbx" id="fri-cbox" checked><label for="Friday" class="form-label ">Friday</label>
+
+                    <input type="checkbox" name="day" class="form-chkbx " id="sat-cbox"> <label for="Saturday " class="form-label ">Saturday</label>
+
+                    <input type="checkbox" name="day" id="sun-chkbox" class="form-chkbx "> <label for="Sunday" class="form-label ">Sunday</label>
+                </fieldset>
+            </div>
+            <div class="form-element ">
+
+                <!--	dropdown list example -->
+                <label for="day " class="form-label ">Select your favourite day?</label>
+                <select name="day " class="form-selectbx ">
+	  <option value="Friday " selected>Friday</option>
+	  <option value="Saturday ">Saturday</option>
+	  <option value="Sunday ">Sunday</option>
+	</select>
+            </div>
+            <div class="form-element ">
+                <!--	dropdown list multiple selections example -->
+                <label for="day " class="form-label ">Select your favourite days?</label>
+                <select name="day " id="select-day " multiple class="form-select ">
+	<option value="Friday ">Friday</option>
+	<option value="Saturday ">Saturday</option>
+	<option value="Sunday ">Sunday</option>
+
+</select></div>
+            <div class="form-element controls ">
+                <!--	button example -->
+                <label for="submit " class="form-label ">Ready to Send?</label>
+                <button name="submit " class="btn btn-submit ">
+  <strong>Send</strong>
+</button>
+            </div>
+            <div>
+
+        </form>
+        </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercise 1 - nested loop</title>
+</head>
+<body>
+<h1>Exercise 1</h1>
+<p id="end"></p>
+
+<script type="text/javascript">
+    for(var i = 1; i<=5; i+=1){
+      // code for outer loop
+      var line = document.createElement('p');
+        for(var j=1; j<=i; j+=1){       // code for inner loop
+            line.appendChild(document.createTextNode('<3 '));
+        }
+      var scr = document.getElementById('end');
+      scr.parentNode.insertBefore(line, scr);
+
+
+    }
+</script>
+    
+</body>
+</html>

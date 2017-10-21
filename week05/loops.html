@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+  <div id="math">for loop</div>
+  <div id="math2">While loop</div>
+  <div id="math3">do while loop</div>
+<script type="text/javascript">
+//for loop
+for(var i=0; i< 5; i+=1){
+  var newcontent = document.createElement('p');
+  newcontent.id = 'for-loop-'+i;
+  newcontent.appendChild(document.createTextNode(i));
+
+  var scr = document.getElementById('math');
+  scr.parentNode.insertBefore(newcontent, scr);
+}
+//while loop
+var j = 1;
+while( j < 5){  
+var newcontent2 = document.createElement('p');
+  newcontent2.id = 'while-loop-'+j;
+  newcontent2.appendChild(document.createTextNode(j));
+
+  var scr = document.getElementById('math2');
+  scr.parentNode.insertBefore(newcontent2, scr);
+  j+=1;
+}
+//do while loop
+var k=5;
+do{
+
+  var newcontent3 = document.createElement('p');
+  newcontent3.id = 'dowhile-loop-'+k;
+  newcontent3.appendChild(document.createTextNode(k));
+
+  var scr = document.getElementById('math3');
+  scr.parentNode.insertBefore(newcontent3, scr);
+    k+=1;
+}while(k < 5)
+</script>
+</body>
+</html>

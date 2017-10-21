@@ -1,0 +1,254 @@
+/*base rules*/
+
+html,
+body,
+form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type=text] {
+    border: 1px solid #999;
+}
+
+
+/*layout rules - divide page into sections*/
+
+
+/* !Base Typography
+--------------------- */
+
+a {
+    text-decoration: none;
+    color: #26808c;
+}
+
+a:hover,
+a:focus {
+    text-decoration: underline;
+}
+
+p {
+    margin: 1em 0;
+    padding: 0;
+}
+
+strong {
+    font-weight: bold;
+}
+
+h1 {
+    border-bottom: 1px solid #fff;
+    background: url(images/bg-ccc.gif) 0 100% repeat-x;
+    color: #666666;
+    font-size: 2.5em;
+    font-weight: normal;
+    line-height: 1;
+    margin: 0 0 0.7em;
+    padding: 0 0 28px;
+}
+
+input,
+textarea,
+select {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#form-examples {
+    background: #eee;
+    width: 100%;
+    color: #333;
+    font: 75%/1.3 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 20px;
+}
+
+.wrapper {
+    display: block;
+    width: 80%;
+    background: white;
+    margin: 0 auto;
+}
+
+.introduction {
+    width: 80%;
+    font-size: 1.5em;
+    margin: 0 0 2em;
+}
+
+.form-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 1em;
+    width: 20em;
+}
+
+
+/*module rules - reusable parts of our design*/
+
+
+/* !General Form Styling
+--------------------- */
+
+
+/* -- !Fieldsets & Legends -- */
+
+.checkbox-weekend,
+.radio-weekend {
+    border: 1px solid darkgray;
+    position: relative;
+    padding: 20px 10px 10px;
+}
+
+
+/* -- !Fields -- */
+
+.form-element .checkbox-weekend,
+.form-element .radio-weekend,
+{
+    margin: 0 0 10px;
+    overflow: hidden;
+    padding: 5px 5px 5px 0;
+}
+
+.form-element {
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 0;
+    padding: 5px;
+}
+
+
+/* Labels */
+
+.form-label {
+    color: #666;
+    font-size: 1.16em;
+    font-weight: bold;
+    line-height: 1.1;
+    margin: 9px 20px 0 0;
+    width: 140px;
+}
+
+.help-tip {
+    display: inline-block;
+    font-size: x-small;
+    padding: 1em;
+}
+
+.required {
+    color: darkred;
+    font-size: x-small;
+}
+
+
+/* Input defaults */
+
+.form-element input[type=text],
+.form-element textarea,
+.form-element select {
+    color: #333;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1;
+    margin: 0;
+}
+
+
+/* Text inputs */
+
+.form-element input[type=text] {
+    padding: 6px 3px;
+    width: 288px;
+}
+
+
+/* Select menus */
+
+.form-select {
+    padding: 0 0 0 3px;
+    width: 291px;
+}
+
+
+/* Textareas */
+
+.form-comment {
+    height: 89px;
+    padding: 3px;
+    width: 269px;
+}
+
+
+/* File Upload */
+
+.file-upload input[type=file] {
+    border: inherit;
+    padding: inherit;
+    width: auto;
+}
+
+
+/* Radio buttons + checkboxes */
+
+.form-element input[type=radio],
+.form-element input[type=checkbox] {
+    margin: 5px 0 0 160px;
+}
+
+.form-element label {
+    display: inline;
+    float: none;
+    font-size: 1em;
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+
+.form-element input[type=radio],
+.form-element input[type=checkbox] {
+    border: inherit;
+    display: inline;
+    margin: 0 5px 0 0;
+    padding: 0;
+}
+
+
+/* Submit */
+
+.controls {
+    background: none;
+}
+
+.btn {
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 400;
+    letter-spacing: .5px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.btn-submit {
+    border: 0;
+    background: #648880;
+    padding: 11px 30px;
+    font-size: 14px;
+}
+
+
+/*state rules describe how modules or layout will work in a particular state*/
+
+.btn-submit:hover {
+    background: #77a198;
+}
+
+
+/*theme rules - how modules or layout may look*/
+
+.sr-only {
+    display: none;
+}
