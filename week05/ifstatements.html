@@ -11,29 +11,33 @@
 <body>
     <div id="result"></div>
     <form>
-        <label for="num1"></label>
+        <label>pLease enter numbers greater than zero</label>
+        <label for="num1">Number 1</label>
         <input type="text" name="num1" id="num1">
-        <label for="num2"></label>
+        <label for="num2">Number 2</label>
         <input type="text" name="num2" id="num2">
         <button id="add">Add</button>
     </form>
 
     <script type="text/javascript">
-        let num1 = prompt("please put in the first number", "0");
-        let num2 = prompt("please put in your second number", "0");
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
         let total = 0;
         num1 = parseInt(num1);
         num2 = parseInt(num2);
 
-        if (num1 == num2) {
+        /* if (num1 === num2) {
             let result = "match";
             console.log(result);
         } else {
             result = "not a match";
             console.log(result);
         }
-        if ((num1 == 0) || (num2 == 0)) { //for checking both numbers are not zero
-            result = "do not use for division";
+       
+               if ((num1 === 0) || (num2 === 0)) { //for checking both numbers are not zero
+                   result = "do not use for division";
+                   console.log(result);*/
+        function mathDemo(num1, num2) {
             if ((num1 > 0) || (num2 > 0)) {
                 total = num2 * num1;
                 console.log(num2 + "*" + num1 + " = " + total);
@@ -48,6 +52,9 @@
             }
 
         }
+
+        let addBtn = document.getElementById("add");
+        addBtn.click = mathDemo();
     </script>
 
 </body>

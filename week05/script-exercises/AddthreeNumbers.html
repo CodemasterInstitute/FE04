@@ -1,17 +1,31 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Add three numbers</title>
-<!-- hint use prompt() to get the information from the user. -->
-<script type="text/javascript" >
+    <meta charset="utf-8">
+    <title>Add three numbers</title>
+    <!-- hint use prompt() to get the information from the user. -->
 
-
-
-</script>
 </head>
 
 <body>
+    <script type="text/javascript">
+        {
+            let num1 = prompt("Please enter your first number");
+            let num2 = prompt("Please enter your second number");
+            let num3 = prompt("please enter your third number");
+            num1 = parseFloat(num1);
+            num2 = parseFloat(num2);
+            num3 = parseFloat(num3);
 
- </body>
- </html>
+            if (num1 > 0 && num2 > 0 && num3 > 0) {
+                let total = num1 + num2 + num3;
+                console.log(total);
+            } else {
+                console.log("you had some zeros");
+            }
+        }
+    </script>
+</body>
+
+</html>

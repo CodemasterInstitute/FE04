@@ -1,18 +1,44 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
+
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>Calculate Gross Pay</title>
-<!-- hint use prompt() to get the information from the user. -->
-<script type="text/javascript" >
+    <meta charset="utf-8">
+    <title>Calculate Gross Pay</title>
+    <!-- hint use prompt() to get the information from the user. -->
 
-
-
-</script>
 </head>
 
 <body>
-<h1>Gross pay Calculation</h1>
+    <h1 id="title">Gross pay Calculation</h1>
 
- </body>
- </html>
+
+    <script type="text/javascript">
+        {
+            let hrswrked = prompt('how many hours did you work this week', '0');
+            let grossPay = 0.0;
+            let otHrs = 0;
+            const payRate = 40.00;
+            const stnWk = 37.5;
+            const otRate = payRate * 1.5;
+
+
+            hrswrked = parseFloat(hrswrked);
+
+            if (hrswrked <= stnWk) {
+                grossPay = payRate * hrswrked;
+            } else {
+                otHrs = hrswrked - stnWk;
+                grossPay = (stnWk * payRate) + (otHrs * otRate);
+            }
+
+            let newcontent = document.createElement('p');
+            newcontent.id = 'grossPay';
+            newcontent.appendChild(document.createTextNode('Your gross pay this week is: $' + grossPay));
+
+            let scr = document.getElementById('title');
+            scr.parentNode.appendChild(newcontent);
+        }
+    </script>
+</body>
+
+</html>
