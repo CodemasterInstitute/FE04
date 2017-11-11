@@ -1,17 +1,39 @@
 /* Your custom styles */
 
-.navbar-brand,
-.nav-link {
-    text-transform: uppercase;
+
+/* TEMPLATE STYLES */
+
+.flex-center {
+    color: #fff;
 }
 
-.nav.nav-tabs {
+.intro-1 {
+    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Work/full page/img%20(2).jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.navbar .btn-group .dropdown-menu a:hover {
+    color: #000 !important;
+}
+
+.navbar .btn-group .dropdown-menu a:active {
+    color: #fff !important;
+}
+
+.top-nav-collapse {
+    background-color: #24355C;
+}
+
+.vertical {
     display: block;
     float: left;
-    border-left: 1px solid #ddd;
-    border-right: 1px solid #ddd;
+    margin-right: 1rem;
 }
 
-.tab-content.card {
-    margin-top: 2em;
+.vertical:after {
+    clear: both;
+}
+
+.tab-content {
+    margin-top: 2rem;
 }
