@@ -1,0 +1,17 @@
+/* Your custom styles */
+
+.navbar-brand,
+.nav-link {
+    text-transform: uppercase;
+}
+
+.nav.nav-tabs {
+    display: block;
+    float: left;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+
+.tab-content.card {
+    margin-top: 2em;
+}

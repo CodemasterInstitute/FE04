@@ -1,13 +1,14 @@
 //creat a variable u
 var U = {
     //define the method
+    //shortcut method
     $: function(id) {
         'use strict';
         if (typeof id == 'string') {
             return document.getElementById(id);
         }
     }, //end of function
-
+    //setText method
     setText: function(id, message) {
         'use strict';
         if ((typeof id == 'string') && (typeof message == 'string')) {
@@ -21,7 +22,7 @@ var U = {
             return true;
         } // End of main IF.
     }, //end of setText Function
-
+    //addevent method
     addEvent: function(obj, type, fn) {
         'use strict';
         if (obj && obj.addEventListener) {
@@ -30,7 +31,7 @@ var U = {
             obj.attachEvent('on' + type, fn);
         }
     }, // end of addEvent function
-
+    //remove event
     removeEvent: function(obj, type, fn) {
             'use strict';
             if (obj && obj.removeEventListener) {
@@ -38,5 +39,7 @@ var U = {
             } else if (obj && obj.detachEvent) {
                 obj.detachEvent('on' + type, fn);
             }
-        } //end of removeEvent() function.
-}; // end of U declaration
+        }
+        //end of removeEvent() function.
+        // end of U declaration
+};
