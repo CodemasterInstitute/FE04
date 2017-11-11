@@ -1,87 +1,64 @@
 // Margin and Padding
-
-<<<<<<< HEAD
 @each $breakpoint in map-keys($grid-breakpoints) {
-  @include media-breakpoint-up($breakpoint) {
-    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-
-    @each $prop, $abbrev in (margin: m, padding: p) {
-      @each $size, $length in $spacers {
-
-        .#{$abbrev}#{$infix}-#{$size}  { #{$prop}:        $length !important; }
-        .#{$abbrev}t#{$infix}-#{$size} { #{$prop}-top:    $length !important; }
-        .#{$abbrev}r#{$infix}-#{$size} { #{$prop}-right:  $length !important; }
-        .#{$abbrev}b#{$infix}-#{$size} { #{$prop}-bottom: $length !important; }
-        .#{$abbrev}l#{$infix}-#{$size} { #{$prop}-left:   $length !important; }
-        .#{$abbrev}x#{$infix}-#{$size} {
-          #{$prop}-right: $length !important;
-          #{$prop}-left:  $length !important;
+    @include media-breakpoint-up($breakpoint) {
+        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+        @each $prop,
+        $abbrev in (margin: m, padding: p) {
+            @each $size, $length in $spacers {
+                .#{$abbrev}#{$infix}-#{$size} {
+                    #{$prop}: $length !important;
+                }
+                .#{$abbrev}t#{$infix}-#{$size} {
+                    #{$prop}-top: $length !important;
+                }
+                .#{$abbrev}r#{$infix}-#{$size} {
+                    #{$prop}-right: $length !important;
+                }
+                .#{$abbrev}b#{$infix}-#{$size} {
+                    #{$prop}-bottom: $length !important;
+                }
+                .#{$abbrev}l#{$infix}-#{$size} {
+                    #{$prop}-left: $length !important;
+                }
+                .#{$abbrev}x#{$infix}-#{$size} {
+                    #{$prop}-right: $length !important;
+                    #{$prop}-left: $length !important;
+                }
+                .#{$abbrev}y#{$infix}-#{$size} {
+                    #{$prop}-top: $length !important;
+                    #{$prop}-bottom: $length !important;
+                }
+            }
         }
-        .#{$abbrev}y#{$infix}-#{$size} {
-=======
-    @each $prop, $abbrev in (margin: m, padding: p) {
-      @each $size, $length in $spacers {
-
-        .#{$abbrev}-#{$size}  { #{$prop}:        $length !important; }
-        .#{$abbrev}t-#{$size} { #{$prop}-top:    $length !important; }
-        .#{$abbrev}r-#{$size} { #{$prop}-right:  $length !important; }
-        .#{$abbrev}b-#{$size} { #{$prop}-bottom: $length !important; }
-        .#{$abbrev}l-#{$size} { #{$prop}-left:   $length !important; }
-        .#{$abbrev}x-#{$size} {
-          #{$prop}-right: $length !important;
-          #{$prop}-left:  $length !important;
+        // Some special margin utils
+        .m#{$infix}-auto {
+            margin: auto !important;
         }
-        .#{$abbrev}y-#{$size} {
->>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
-          #{$prop}-top:    $length !important;
-          #{$prop}-bottom: $length !important;
+        .mt#{$infix}-auto {
+            margin-top: auto !important;
         }
-      }
+        .mr#{$infix}-auto {
+            margin-right: auto !important;
+        }
+        .mb#{$infix}-auto {
+            margin-bottom: auto !important;
+        }
+        .ml#{$infix}-auto {
+            margin-left: auto !important;
+        }
+        .mx#{$infix}-auto {
+            margin-right: auto !important;
+            margin-left: auto !important;
+        }
+        .my#{$infix}-auto {
+            margin-top: auto !important;
+            margin-bottom: auto !important;
+        }
     }
-
-<<<<<<< HEAD
-    // Some special margin utils
-    .m#{$infix}-auto  { margin:        auto !important; }
-    .mt#{$infix}-auto { margin-top:    auto !important; }
-    .mr#{$infix}-auto { margin-right:  auto !important; }
-    .mb#{$infix}-auto { margin-bottom: auto !important; }
-    .ml#{$infix}-auto { margin-left:   auto !important; }
-    .mx#{$infix}-auto {
-      margin-right: auto !important;
-      margin-left:  auto !important;
-    }
-    .my#{$infix}-auto {
-      margin-top:    auto !important;
-      margin-bottom: auto !important;
-    }
-  }
 }
 
-@each $key, $val in $grid-breakpoints {
-  @include media-breakpoint-up($key) {
-    $y: map-get($extreme-padding, $key);
-    .e-px {
-      padding-left: $y;
-      padding-right: $y;
-    }
-  }
-}
-
-.img-fluid {
-  max-width: 100%;
-  height:auto;
-}
-
-.inline-ul>li {
-  display: inline;
-}
-
-.list-inline-div>div {
-  display: inline-block;
-=======
-
-
-@each $key, $val in $grid-breakpoints {
+@each $key,
+$val in $grid-breakpoints {
     @include media-breakpoint-up($key) {
         $y: map-get($extreme-padding, $key);
         .e-px {
@@ -93,7 +70,7 @@
 
 .img-fluid {
     max-width: 100%;
-    height:auto;
+    height: auto;
 }
 
 .inline-ul>li {
@@ -102,58 +79,10 @@
 
 .list-inline-div>div {
     display: inline-block;
->>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 }
 
 // Center text on mobile
 .center-on-small-only {
-<<<<<<< HEAD
-  @media #{$medium-and-down} {
-    text-align: center;
-    .img-fluid {
-      display: inline;
-    }
-  }
-}
-
-.flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  p {
-    margin: 0;
-  }
-  ul {
-    text-align: center;
-    li {
-      margin-bottom: 1rem;
-    }
-  }
-}
-
-.hidden-md-down {
-  @media (max-width: $medium-screen){
-    display: none!important;
-  }  
-}
-
-.mb-r {
-  @media (min-width: $medium-screen){
-    margin-bottom: 3rem!important;
-  }   
-  @media (max-width: $medium-screen){
-    margin-bottom: 2rem!important;
-  }  
-}
-
-.font-bold {
-  font-weight: 500;
-}
-
-.font-up {
-  text-transform: uppercase;
-=======
     @media #{$medium-and-down} {
         text-align: center;
         .img-fluid {
@@ -179,18 +108,18 @@
 }
 
 .hidden-md-down {
-    @media (max-width: $medium-screen){
+    @media (max-width: $medium-screen) {
         display: none!important;
-    }    
+    }
 }
 
 .mb-r {
-    @media (min-width: $medium-screen){
+    @media (min-width: $medium-screen) {
         margin-bottom: 3rem!important;
-    }   
-    @media (max-width: $medium-screen){
+    }
+    @media (max-width: $medium-screen) {
         margin-bottom: 2rem!important;
-    }  
+    }
 }
 
 .font-bold {
@@ -199,66 +128,19 @@
 
 .font-up {
     text-transform: uppercase;
->>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 }
 
 // Dividers light and dark variations
 .hr-light {
-<<<<<<< HEAD
-  border-top: 1px solid #fff;
-}
-
-.hr-dark {
-  border-top: 1px solid #666;
-=======
     border-top: 1px solid #fff;
 }
 
 .hr-dark {
     border-top: 1px solid #666;
->>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 }
 
 // Blockquote contextual 
 .blockquote {
-<<<<<<< HEAD
-  .bq-title {
-    font-weight: 400;
-    font-size: 1.5rem;
-    margin-bottom: 0;
-  }
-  p {
-    font-size: 1.1rem;
-  }
-}
-
-.bq-primary {
-  border-left: 3px solid $primary-color;
-  .bq-title {
-    color: $primary-color;
-  }
-}
-
-.bq-warning {
-  border-left: 3px solid $warning-color;
-  .bq-title {
-    color: $warning-color;
-  }
-}
-
-.bq-danger {
-  border-left: 3px solid $danger-color;
-  .bq-title {
-    color: $danger-color;
-  }
-}
-
-.bq-success {
-  border-left: 3px solid $success-color;
-  .bq-title {
-    color: $success-color;
-  }
-=======
     .bq-title {
         font-weight: 400;
         font-size: 1.5rem;
@@ -295,5 +177,4 @@
     .bq-title {
         color: $success-color;
     }
->>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 }

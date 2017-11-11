@@ -14,14 +14,15 @@ document.getElementById("closecover").onclick = function() {
     //getting the image links and dialog box
 var imglinks = document.getElementById("thumbs").getElementsByTagName('a'),
     cover = document.getElementById("cover"),
-    coverimage = cover.getElementsByTagName("img")[0],
-    testdialog = document.createElement("dialog");
+    coverimage = cover.getElementsByTagName("img")[0];
+testdialog = document.createElement("dialog");
 testdialog.setAttribute("open", "");
-//calling polyfill if required.
-if (!testdialog.open) {
-    dialogPolyfill.registerDialog(cover);
-}
-//putting the call to the showImage function on the links
+calling polyfill
+if required.
+if(!testdialog.open) {
+        dialogPolyfill.registerDialog(cover);
+    }
+    //putting the call to the showImage function on the links
 for (var i = 0; i < imglinks.length; i++) {
     imglinks[i].onclick = showImage;
 }
