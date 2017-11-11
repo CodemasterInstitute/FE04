@@ -29,11 +29,19 @@ $spacers: (
 
 // Extreme Padding
 $extreme-padding: (
+<<<<<<< HEAD
   "xs": 0,
   "sm": 5%,
   "md": 10%,
   "lg": 15%,
   "xl": 20%
+=======
+	"xs": 0,
+	"sm": 5%,
+	"md": 10%,
+	"lg": 15%,
+	"xl": 20%
+>>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 );
 
 // Navbar
@@ -62,12 +70,20 @@ $navbar-avatar-height: 35px;
 $navbar-double-small-padding: 4px;
 $navbar-double-font-size: 15px;
 $navbar-breadcrumb-dn-padding: 1rem;
+<<<<<<< HEAD
 // $navbar-button-collapse-top: 1px;
+=======
+$navbar-button-collapse-top: 1px;
+>>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 $navbar-button-collapse-left: 10px;
 $navbar-button-collapse-font-size: 1.5rem;
 $navbar-button-collapse-fs-sm: 1.4rem;
 $navbar-button-collapse-mx: 10px;
+<<<<<<< HEAD
 // $navbar-button-collapse-mt: 1px;
+=======
+$navbar-button-collapse-mt: 2px;
+>>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 
 //Dropdown
 $dropdown-menu-padding: 0.5rem;
@@ -137,6 +153,7 @@ $image-path: '../img/';
 // Reponsive Headings
 $responsive-headings: (
   "xs": (
+<<<<<<< HEAD
     "h1": 150%,
     "h2": 145%,
     "h3": 135%,
@@ -173,6 +190,46 @@ $responsive-headings: (
   ),
 );
 
+=======
+      "h1": 150%,
+      "h2": 145%,
+      "h3": 135%,
+      "h4": 135%,
+      "h5": 135%
+  ),
+  "sm": (
+      "h1": 170%,
+      "h2": 140%,
+      "h3": 125%,
+      "h4": 125%,
+      "h5": 125%
+  ),
+  "md": (
+      "h1": 200%,
+      "h2": 170%,
+      "h3": 140%,
+      "h4": 125%,
+      "h5": 125%
+  ),
+  "lg": (
+      "h1": 200%,
+      "h2": 170%,
+      "h3": 140%,
+      "h4": 125%,
+      "h5": 125%
+  ),
+  "xl": (
+      "h1": 250%,
+      "h2": 200%,
+      "h3": 170%,
+      "h4": 140%,
+      "h5": 125%
+  ),
+);
+
+
+
+>>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 /*** Global ***/
 // Media Query Ranges
 $small-screen-up: 601px !default;
@@ -191,6 +248,7 @@ $medium-only: "only screen and (min-width : #{$small-screen-up}) and (max-width 
 $hide-sidenav: "only screen and (max-width : #{$sidenav-breakpoint})" !default;
 
 // Link color
+<<<<<<< HEAD
 $link-color: #0275d8;
 
 $navbar-option: (
@@ -209,3 +267,6 @@ $navbar-option: (
     "navbar-placeholder-color": $white !important
   )
 );
+=======
+$link-color: #0275d8;
+>>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3

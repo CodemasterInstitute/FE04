@@ -1,5 +1,6 @@
 // Dropdowns free
 .dropdown {
+<<<<<<< HEAD
   .dropdown-menu {
     .dropdown-item {
       &:hover,
@@ -10,4 +11,16 @@
       }
     }
   }
+=======
+    .dropdown-menu {
+        .dropdown-item {
+            &:hover,
+            &:active,
+            &:focus {
+				color: #1d1e1f;
+				background-color: #f7f7f9;
+            }
+        }
+    }
+>>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 }

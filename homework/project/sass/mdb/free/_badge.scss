@@ -1,4 +1,5 @@
 //Badges
+<<<<<<< HEAD
 .badge {
   color: #fff;
 }
@@ -17,4 +18,20 @@
 
 .badge-warning {
   color: #FFF !important;
+=======
+@each $name, $color in $material-colors {
+    .badge-#{$name} {
+        background-color: $color;
+    }
+}
+
+.badge-pill {
+    padding-right: $badge-pill-padding-x;
+    padding-left: $badge-pill-padding-x;
+    @include border-radius($badge-pill-border-radius);
+}
+
+.badge-warning {
+    color: #FFF !important;
+>>>>>>> 9a4658332127a16da2be8a3155aa5aaccfde9fc3
 }
