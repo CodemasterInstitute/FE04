@@ -1,5 +1,6 @@
 /* Your custom styles */
-
+@font-face{font-family: Anders
+src: url(../fonts/anders/anders.tff)}
 
 /* TEMPLATE STYLES */
 
@@ -8,22 +9,38 @@
 }
 
 .intro-1 {
-    background: url("https://mdbootstrap.com/img/Photos/Horizontal/Work/full page/img%20(2).jpg")no-repeat center center;
+    background-color: rgba(255, 255, 255, 0);
+	background-image: -webkit-linear-gradient(-55deg, #9966cc 20%, #e18522 80%);
+	background-image: -moz-linear-gradient(-55deg, #9966cc 20%, #e18522 80%);
+	background-image: -o-linear-gradient(-55deg, #9966cc 20%, #e18522 80%);
+	background-image: linear-gradient(145deg, #9966cc 20%, #e18522 80%);
     background-size: cover;
 }
 
-.navbar .btn-group .dropdown-menu a:hover {
-    color: #000 !important;
+.navbar-brand.logo{
+	font-family: Anders;
+	color: #ffffff;
+	font-size: 5.79em;
+	font-weight: 400;
+	transform: scale(0.442,0.442);
 }
-
-.navbar .btn-group .dropdown-menu a:active {
-    color: #fff !important;
+.navbar-item{
+	font-family: Lato;
+	font-size: 2.26em;
+	font-weight: 700;
+	color: #e5e5e5;
+	transform: scale(0.442,0.442);
 }
 
 .top-nav-collapse {
     background-color: #24355C;
 }
-
+.h1-responsive{
+	font-family: Lato;
+	color: #ffffff;
+	font-size: 6.25em;
+	font-weight: 700;
+}
 .vertical {
     display: block;
     float: left;
@@ -36,4 +53,14 @@
 
 .tab-content {
     margin-top: 2rem;
+}
+.circle{
+	width:50px;
+	height:50px;
+	border-radius: 50%;
+	background-color: #333333;
+}
+.cardtitle{
+	fontsite: 1em;
+	font-weight: 700;
 }

@@ -1749,6 +1749,10 @@ a:not([href]):not([tabindex]):hover {
     color: inherit;
     text-decoration: none
 }
+header .navbar.navbar-expand-lg.navbar-dark.fixed-top.scrolling-navbar .container {
+}
+header .navbar.navbar-expand-lg.navbar-dark.fixed-top.scrolling-navbar .container {
+}
 
 .disabled {
     cursor: not-allowed!important
