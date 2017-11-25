@@ -8,13 +8,21 @@
  </head>
  <body>
   <!-- File: Week09Ex-2.htm -->
+  <table>
+  <tr id="title_row">
+    <th>Number</th>
+    <th>Square</th>
+  </tr>
+  </table>
    <script type="text/javascript">
      //document.write("<table><tr><th>Number</th><th>Square</th></tr>");
-     var number = 1;
+     let number = 1;
+     
      while(number <= 10)
      {
+       let square = Math.pow(number, 2);
       //document.write("<tr><td>" + number + "</td>");
-     // document.write("<td>" + number * number + "</td></tr>");
+     // document.write("<td>" + square+ "</td></tr>");
       number++
      }
      //document.write("</table>");

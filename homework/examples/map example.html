@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <link src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <style>
+       #map {
+        height: 800px;
+       }
+       #menu{
+        position: absolute;
+        top: 790px;
+        left: 100px;
+        width: 800px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;   
+        z-index: 99;
+        background: rgba(0,0,0, 0.3);
+       }
+       #menu a{
+         width: 25%;
+
+       }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+        <div id="menu">
+    
+            <a href="#"><i class="fa fa-cog">menu</i></a> 
+            <a href="#">
+              <i class="fa fa-cog">menu</i>
+            </a>
+            <a href="#">
+              <i class="fa fa-cog">menu</i>
+            </a>
+            <a href="#">
+              <i class="fa fa-cog">menu</i>
+            </a>
+
+          </ol>
+        </div>
+    <div id="map"></div>
+
+    <script>
+      function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 4,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7ips7D9tJI54RgcDfjNZ4rivswHA7Wac&callback=initMap">
+    </script>
+  </body>
+</html>
