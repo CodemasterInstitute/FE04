@@ -15,8 +15,20 @@
         //create the table
         var table = document.createElement('table'),
             tbody = document.createElement('tbody'),
-            rowcount;
+            thead = document.createElement('thead');
         //add tbody
+        table.appendChild(thead);
+        for (var a = 0; a < 1; a += 1) {
+            thead.insertRow(a);
+            for (b = 0; b < 2; b += 1) {
+                thead.rows[a].insertCell(b);
+                if (b == 0) {
+                    thead.rows[a].cells[b].appendChild(document.createTextNode('Number'));
+                } else {
+                    thead.rows[a].cells[b].appendChild(document.createTextNode('Square'));
+                }
+            }
+        }
         table.appendChild(tbody);
         //creating rows 
         for (var i = 0; i <= 10; i += 1) {
@@ -24,19 +36,20 @@
             tbody.insertRow(i);
             //and cells
             for (var j = 0; j < 2; j += 1) {
-                var result = Math.pow(i, 2);
-                var number = i + 1;
-                //tr.appendChild(document.createElement('td')); no worky
-                tbody.rows[i].insertCell(j);
-                //td.(document.createTextNode(number));
-                //insert style for squared values
-                if ((j == 0) && (number < 11)) {
-                    //td.style.color ='red';
-                    tbody.rows[i].cells[j].appendChild(document.createTextNode(number));
-                } else {
-                    tbody.rows[i].cells[j].appendChild(document.createTextNode(result));
+                var number = (i + 1);
+                var result = Math.pow(number, 2);
+                if (number < 11) {
+                    //tr.appendChild(document.createElement('td')); no worky
+                    tbody.rows[i].insertCell(j);
+                    //td.(document.createTextNode(number));
+                    //insert style for squared values
+                    if (j == 0) {
+                        //td.style.color ='red';
+                        tbody.rows[i].cells[j].appendChild(document.createTextNode(number));
+                    } else {
+                        tbody.rows[i].cells[j].appendChild(document.createTextNode(result));
+                    }
                 }
-
 
 
             }
