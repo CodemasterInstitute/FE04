@@ -1,20 +1,8 @@
-/* Your custom styles */
-
-
-/* TEMPLATE STYLES */
-
+/* CSS Document */
 .flex-center {
     color: #fff;
 }
-.navbar-brand{
-	font-family: andersregular;
-	color: #ffffff;
-	font-size: 92.7px;
-	font-weight: 400;
-	transform: scale(0.442,0.442);
-	border-right: 2px solid white;
-    padding-right: 0.5em;
-}
+
 .intro-1 {
     width: 1919px;
 	height: 500px;
@@ -25,17 +13,7 @@
 	background-image: linear-gradient(145deg, #9966cc 34%, #e18522 66%);
     background-size: cover;
 }
-.nav-link{
-	font-family: Lato, sans-serif;
-	font-size: 36.18px;
-	font-weight: 700
-	text-transform: uppercase;
-	transform: scale(0.442,0.442);
-}
 
-.nav-link:hover{
-	color: #e5e5e5;
-}
 .navbar .btn-group .dropdown-menu a:hover {
     color: #000 !important;
 }
@@ -50,44 +28,4 @@
 	background-image: -moz-linear-gradient(-55deg, #9966cc 34%, #e18522 66%);
 	background-image: -o-linear-gradient(-55deg, #9966cc 34%, #e18522 66%);
 	background-image: linear-gradient(145deg, #9966cc 34%, #e18522 66%);
-}
-
-.vertical {
-    display: block;
-    float: left;
-    margin-right: 1rem;
-}
-
-.vertical:after {
-    clear: both;
-}
-
-.tab-content {
-    margin-top: 2rem;
-	height: 300px;
-}
-
-.circle{
-	background: black;
-	height:16.666667%;
-}
-.purple{
-	background-color: #9966cc;
-
-}
-.white-text{
-	color: #ffffff;
-	margin-top:.5em;
-}
-
-.grey-box{
-	background-color: #f2f7fc;
-}
-
-.dark-grey-box{
-	background-color: rgba(77,77,77,0.59);
-}
-
-.btn-rounded{
-	border-radius: 10em;
 }
