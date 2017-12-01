@@ -11,7 +11,9 @@
             * element that contains the map. */
         
         #map {
-            height: 100%;
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
         }
         /* Optional: Makes the sample page fill the window. */
         
@@ -26,21 +28,7 @@
 
 <body>
     <div id="map"></div>
-    <script>
-        function initMap() {
-            var uluru = {
-                lat: -25.363,
-                lng: 131.044
-            };
-            var map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 14,
-                center: uluru
-            });
-            var marker = new google.maps.Marker({
-                position: uluru,
-                map: map
-            });
-        }
+    <script src="scripts/mapstyle.js">
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4GCoDxivSmDSfGNsb2kKAcEflJTjhvk4&callback=initMap">
     </script>
